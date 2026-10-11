@@ -274,3 +274,61 @@
 @media(min-width:701px) and (max-width:950px){
  .case-fact strong{font-size:clamp(34px,4.8vw,42px)}
 }
+
+/* Original portraits are cropped by the layout; the image files stay untouched. */
+.hero-kicker>span{display:block;min-width:0}
+.nav-contact>span{display:block;min-width:0}
+.hero-portrait{overflow:hidden;border:var(--line);border-bottom:0}
+.hero-portrait img{border:0;object-position:50% 40%;transform:scale(1.25);transform-origin:50% 40%}
+.team-member{grid-template-columns:156px minmax(0,2.3fr) minmax(0,4.2fr) minmax(0,2fr);gap:25px}
+.team-portrait{position:relative;margin:0;width:100%;aspect-ratio:4 / 5;overflow:hidden;border:var(--line);background:#e8e3dc}
+.team-portrait img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 35%;filter:grayscale(1)}
+.team-portrait-ivan img{object-position:50% 40%;transform:scale(1.6);transform-origin:50% 40%}
+.team-identity,.team-member>p,.team-proof{min-width:0}
+.timeline-segment strong span{margin-left:0}
+.hero-heading,.section-heading,.case-hero h1,.case-card h3,.case-body h2,.team-member h3,.service-card h3,.implementation-task h3,.step h4,.format h3,.program-title,.training-materials h3,.task-title,.contact-person{letter-spacing:0;word-spacing:normal}
+@media(max-width:1190px){
+ .team-member{grid-template-columns:132px minmax(0,2.3fr) minmax(0,4.2fr) minmax(0,2fr);gap:18px}
+}
+@media(max-width:950px){
+ .team-member{grid-template-columns:150px minmax(0,1fr);gap:18px 25px}
+ .team-portrait{grid-column:1;grid-row:1 / span 2}
+ .team-identity{grid-column:2;grid-row:1}
+ .team-proof{grid-column:2;grid-row:2;margin-top:0}
+ .team-member>p{grid-column:1 / -1;grid-row:3;margin-top:0;max-width:650px}
+}
+@media(max-width:700px){
+ .team-member{grid-template-columns:144px minmax(0,1fr);gap:18px 22px}
+ .team-member>p{font-size:16px;max-width:none}
+ .team-proof strong{font-size:46px}
+}
+@media(max-width:480px){
+ .training-method .practical-steps{grid-template-columns:minmax(0,1fr)}
+ .training-method .step{grid-template-columns:34px minmax(0,1fr);gap:14px;border-right:0;border-bottom:var(--line);padding:25px 18px}
+ .training-method .step:last-child{border-bottom:0}
+ .training-method .step-number{font-size:35px}
+}
+@media(max-width:420px){
+ .team-member{grid-template-columns:100px minmax(0,1fr);gap:18px 14px}
+ .team-portrait{grid-row:1}
+ .team-member h3{font-size:29px;line-height:1.03}
+ .team-identity .team-role{font-size:13px;margin-top:12px}
+ .team-proof{grid-column:1 / -1;grid-row:2}
+ .team-proof strong{font-size:46px}
+ .team-proof span{max-width:none}
+ .team-member>p{font-size:16px}
+ .format h3.display{font-size:clamp(26px,8.2vw,34px)}
+ #implementation-title{font-size:clamp(31px,9.6vw,40px)}
+}
+@media(min-width:951px){
+ .format h3.display{font-size:clamp(24px,calc(3.3vw - 10px),38px)}
+}
+@media(min-width:701px) and (max-width:950px){
+ .case-card:nth-child(3) h3{font-size:clamp(22px,3.2vw,26px)}
+ #implementation-title{font-size:clamp(39px,5.4vw,49px)}
+ .implementation-task h3{font-size:clamp(20px,3vw,26px)}
+}
+@media(max-width:420px){
+ #cases-title{font-size:clamp(39px,11.6vw,49px)}
+ .team-member h3{font-size:clamp(25px,7.8vw,29px)}
+}
