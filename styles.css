@@ -326,9 +326,42 @@
 @media(min-width:701px) and (max-width:950px){
  .case-card:nth-child(3) h3{font-size:clamp(22px,3.2vw,26px)}
  #implementation-title{font-size:clamp(39px,5.4vw,49px)}
- .implementation-task h3{font-size:clamp(20px,3vw,26px)}
+ .implementation-task h3{font-size:clamp(19px,2.85vw,26px)}
+ .case-aside h2{font-size:clamp(20px,2.8vw,27px)}
 }
 @media(max-width:420px){
  #cases-title{font-size:clamp(39px,11.6vw,49px)}
  .team-member h3{font-size:clamp(25px,7.8vw,29px)}
+}
+
+/* The menu occupies a header row; opening it moves the page down. */
+.menu-close{display:none;width:26px;height:26px;flex:0 0 26px}
+.menu-toggle.is-open .menu-label{display:none}
+.menu-toggle.is-open .menu-close{display:block}
+@media(max-width:950px){
+ .menu-toggle{display:flex;align-items:center;justify-content:center;min-width:0;min-height:68px;padding:12px}
+ .site-nav{position:static;grid-column:1 / -1;grid-row:2;inset:auto;z-index:auto;width:100%;border-top:var(--line);border-bottom:0}
+ .site-nav.open{display:grid}
+}
+/* Keep the unbroken phrases within their columns on both sides of 420px. */
+@media(max-width:700px){
+ #implementation-title{font-size:clamp(31px,8.8vw,61px)}
+ .format h3.display{font-size:clamp(26px,7.7vw,46px)}
+ .team-member h3{font-size:clamp(25px,7.2vw,39px)}
+}
+/* The desktop columns need smaller type until they have room to expand. */
+@media(min-width:951px){
+ .training-method{grid-template-columns:minmax(0,38fr) minmax(0,62fr)}
+ .training-method .practical-steps{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .training-method .practical-intro,.training-method .practical-steps,.training-method .step,.training-method .step>div{min-width:0}
+ .training-method .step{grid-template-columns:58px minmax(0,1fr)}
+}
+@media(min-width:951px) and (max-width:1190px){
+ .site-nav a{font-size:clamp(13px,1.4vw,15px);padding-left:4px;padding-right:4px}
+ .case-fact strong{font-size:clamp(50px,5.2vw,54px)}
+ .training-method .practical-intro .section-heading{font-size:clamp(37px,3.8vw,57px)}
+ .team-member h3{font-size:clamp(30px,3.1vw,33px)}
+ .team-proof strong{font-size:clamp(38px,3.8vw,44px)}
+ .training-method .step{grid-template-columns:45px minmax(0,1fr)}
+ .training-method .step h4{font-size:clamp(21px,2.2vw,27px)}
 }
