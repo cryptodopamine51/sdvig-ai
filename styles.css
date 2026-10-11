@@ -62,3 +62,215 @@
  .practical-steps .step{grid-template-columns:minmax(0,1fr);border-right:0;border-bottom:var(--line)}
  .practical-steps .step:last-child{border-bottom:0}
 }
+
+/* Two services share the main offer; the established grid and type stay intact. */
+.site-header{grid-template-columns:62% 38%}
+.site-nav{grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,1.35fr)}
+.site-nav a{min-width:0;font-size:17px}
+.hero-heading{font-size:clamp(88px,8.2vw,132px)}
+.hero-description{width:54%;max-width:390px;font-size:18px;line-height:1.45}
+.hero-actions{display:flex;flex-direction:column;align-items:flex-start;gap:12px;width:54%}
+.hero-actions .hero-button{width:100%;max-width:330px;font-size:19px;padding:17px 20px;min-height:60px}
+.hero-author{width:39%}
+.services-heading{padding:43px var(--gutter)}
+.cases-heading{padding:43px var(--gutter);border-bottom:var(--line)}
+.section-top{grid-template-columns:minmax(0,62fr) minmax(0,38fr)}
+.section-top>div{min-width:0}
+.formats{grid-template-columns:repeat(3,minmax(0,1fr))}
+.format{min-width:0}
+.services-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));border-top:var(--line)}
+.service-card{display:flex;flex-direction:column;min-width:0;padding:35px var(--gutter);border-right:var(--line)}
+.service-card:last-child{border-right:0;background:var(--yellow)}
+.service-card h3{font:800 clamp(30px,3.1vw,44px)/1.05 var(--display);font-variation-settings:'wdth' 74,'wght' 800;text-transform:uppercase;margin:0 0 25px}
+.service-card>p{font-size:18px;line-height:1.48;margin:0 0 20px;max-width:570px}
+.service-result{border-top:var(--line);padding-top:21px;margin:5px 0 26px}
+.service-result strong{font:700 16px/1.2 var(--display);font-variation-settings:'wdth' 77,'wght' 700;text-transform:uppercase}
+.service-result p{font-size:17px;line-height:1.48;margin:11px 0 0}
+.service-card .text-link{margin-top:auto}
+.implementation-tasks{display:grid;grid-template-columns:repeat(3,minmax(0,1fr))}
+.implementation-task{display:flex;flex-direction:column;min-width:0;border-right:var(--line);padding:30px 32px 35px}
+.implementation-task:last-child{border-right:0}
+.implementation-task h3{font:800 32px/1.07 var(--display);font-variation-settings:'wdth' 75,'wght' 800;text-transform:uppercase;margin:0 0 22px}
+.implementation-task p{font-size:17px;line-height:1.48;margin:0 0 20px}
+.implementation-task .task-situation{font-size:16px}
+.implementation-task .task-proof{border-top:var(--line);padding-top:17px;font-size:15px}
+.implementation-task .text-link{margin-top:auto;font-size:17px}
+.implementation-process{border-top:var(--line)}
+.implementation-process .practical-intro{display:flex;flex-direction:column;align-items:flex-start;gap:24px}
+.implementation-process .practical-intro p{margin:0}
+.implementation-process .button{font-size:18px;padding:16px 18px}
+.implementation-steps .step{grid-template-columns:58px minmax(0,1fr);border-right:0;border-bottom:var(--line);padding:29px 32px}
+.implementation-steps .step:last-child{border-bottom:0}
+.step h4{font:750 27px/1.05 var(--display);font-variation-settings:'wdth' 75,'wght' 750;text-transform:uppercase;letter-spacing:-.02em;margin:0 0 13px}
+.training .task-table{border-top:0;border-bottom:var(--line)}
+.training-method .practical-intro .section-heading{font-size:clamp(39px,3.8vw,57px)}
+.training-program{border-top:var(--line)}
+.program-title{font:800 34px/1.07 var(--display);font-variation-settings:'wdth' 75,'wght' 800;text-transform:uppercase;padding:30px var(--gutter);border-bottom:var(--line);margin:0}
+.program-cta{padding:27px var(--gutter);border-top:var(--line)}
+.training-materials{justify-content:flex-start;gap:26px}
+.training-materials h3{font:800 37px/1.07 var(--display);font-variation-settings:'wdth' 75,'wght' 800;text-transform:uppercase;margin:0}
+.training-materials ul{margin:0;padding:0;list-style:none}
+.training-materials li{font-size:17px;line-height:1.45;border-top:var(--line);padding:16px 0}
+.format h3.display{font-size:clamp(31px,2.9vw,42px);line-height:1.04}
+.team-heading{grid-template-columns:minmax(0,1fr)}
+.team-member{grid-template-columns:42px minmax(0,2.5fr) minmax(0,4.5fr) minmax(0,2fr);gap:22px}
+.team-identity .team-role{display:block;margin-top:16px;max-width:210px}
+.team-proof strong{display:block;font:900 clamp(42px,4.1vw,60px)/1 var(--display);font-variation-settings:'wdth' 70,'wght' 900;white-space:nowrap}
+.team-proof span{display:block;font-size:14px;line-height:1.4;margin-top:10px;max-width:210px}
+.aelitwood-art .art-title.display{font-size:clamp(65px,6.6vw,96px);line-height:.92;max-width:none}
+.case-hero-visual .aelitwood-art .art-title.display{font-size:clamp(82px,8vw,120px)}
+.aelitwood-art .art-footer{font-size:13px;max-width:300px;line-height:1.3}
+.case-metric{min-width:0}
+.case-metric strong{white-space:nowrap}
+.case-hero{grid-template-columns:minmax(0,62fr) minmax(0,38fr)}
+.case-hero-copy,.case-hero-visual{min-width:0}
+.case-hero h1.display{font-size:clamp(55px,6.5vw,96px)}
+
+@media(max-width:1190px){
+ .hero-heading{font-size:clamp(70px,8vw,98px)}
+ .hero-description{font-size:16px;width:54%}
+ .hero-actions .hero-button{font-size:17px;padding:16px;min-height:56px}
+ .site-nav a{font-size:15px;padding-left:6px;padding-right:6px}
+ .implementation-task{padding:27px 26px}
+ .implementation-task h3{font-size:29px}
+ .team-member{grid-template-columns:32px minmax(0,2.5fr) minmax(0,4.5fr) minmax(0,2fr);gap:16px}
+}
+@media(max-width:950px){
+ .section-top{grid-template-columns:minmax(0,3fr) minmax(0,2fr)}
+ .formats{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .format:nth-child(2){border-right:0}
+ .format:last-child{grid-column:1 / -1;border-top:var(--line)}
+ .format h3.display{font-size:30px}
+ .site-header{grid-template-columns:minmax(0,1fr) 85px}
+ .site-nav{grid-template-columns:repeat(3,minmax(0,1fr)) minmax(0,1.35fr)}
+ .site-nav a{font-size:17px}
+ .hero-left{min-height:710px}
+ .hero-heading{font-size:clamp(51px,7.4vw,74px)}
+ .hero-description{font-size:15px}
+ .hero-actions .hero-button{font-size:15px;padding:14px 12px;gap:10px}
+ .hero-author{width:39%}
+ .services-heading,.cases-heading{padding:34px 27px}
+ .service-card{padding:29px 27px}
+ .service-card>p{font-size:17px}
+ .service-result p{font-size:16px}
+ .implementation-task{padding:26px 22px}
+ .implementation-task h3{font-size:26px}
+ .implementation-task p{font-size:16px}
+ .implementation-task .text-link{font-size:15px}
+ .implementation-steps .step{grid-template-columns:45px minmax(0,1fr);padding:26px 27px}
+ .step h4{font-size:24px}
+ .training-method .practical-intro .section-heading{font-size:clamp(40px,5.2vw,53px)}
+ .training-method .practical-intro{grid-template-columns:minmax(0,3fr) minmax(0,2fr)}
+ .team-member{grid-template-columns:32px minmax(0,3fr) minmax(0,5fr)}
+ .team-identity{grid-column:2;grid-row:1}
+ .team-member>p{grid-column:3;grid-row:1 / span 2}
+ .team-proof{grid-column:2;grid-row:2;margin-top:10px}
+ .team-identity .team-role{margin-top:13px}
+ .aelitwood-art .art-title.display{font-size:clamp(47px,6.2vw,65px)}
+ .aelitwood-art .art-footer{font-size:11px}
+ .case-hero-visual .aelitwood-art .art-title.display{font-size:clamp(70px,9vw,86px)}
+ .case-hero h1.display{font-size:clamp(52px,6.5vw,64px)}
+ .case-metric strong{font-size:clamp(42px,5.4vw,55px)}
+}
+@media(max-width:700px){
+ .case-hero{grid-template-columns:minmax(0,1fr)}
+ .section-top{grid-template-columns:minmax(0,1fr)}
+ .formats{grid-template-columns:minmax(0,1fr)}
+ .format:last-child{grid-column:auto;border-top:0}
+ .site-header{grid-template-columns:minmax(0,1fr) 76px}
+ .site-nav{grid-template-columns:repeat(2,minmax(0,1fr))}
+ .site-nav a{border-bottom:var(--line);font-size:17px}
+ .site-nav a:nth-child(3){border-bottom:0}
+ .site-nav .nav-contact{grid-column:auto;border-left:var(--line);border-bottom:0;justify-content:space-between;gap:12px}
+ .hero-left{min-height:705px}
+ .hero-heading{font-size:clamp(51px,10.9vw,82px)}
+ .hero-description{font-size:16px;width:53%;max-width:340px}
+ .hero-actions{width:53%}
+ .hero-actions .hero-button{font-size:17px;padding:16px;min-height:56px}
+ .hero-author{width:40%}
+ .services-heading,.cases-heading{padding:34px 23px}
+ .services-grid{grid-template-columns:minmax(0,1fr)}
+ .service-card{border-right:0;border-bottom:var(--line);padding:30px 23px}
+ .service-card:last-child{border-bottom:0}
+ .service-card h3{font-size:35px;max-width:540px}
+ .service-card>p{font-size:18px}
+ .service-result p{font-size:17px}
+ .implementation-tasks{grid-template-columns:minmax(0,1fr)}
+ .implementation-task{border-right:0;border-bottom:var(--line);padding:29px 23px}
+ .implementation-task:last-child{border-bottom:0}
+ .implementation-task h3{font-size:32px;max-width:540px}
+ .implementation-task p{font-size:17px;max-width:580px}
+ .implementation-task .task-situation{font-size:17px}
+ .implementation-task .task-proof{font-size:16px}
+ .implementation-task .text-link{font-size:18px}
+ .implementation-process .practical-intro{padding:32px 23px}
+ .implementation-steps .step{grid-template-columns:46px minmax(0,1fr);padding:27px 23px;gap:18px}
+ .implementation-steps .step-number{font-size:46px}
+ .step h4{font-size:27px}
+ .training-method .practical-intro{grid-template-columns:minmax(0,1fr)}
+ .training-method .practical-intro .section-heading{font-size:clamp(40px,8vw,56px)}
+ .training-method .practical-intro p{margin-top:23px}
+ .program-title{padding:27px 23px;font-size:30px}
+ .program-cta{padding:27px 23px}
+ .training-materials h3{font-size:36px}
+ .format h3.display{font-size:clamp(36px,7vw,46px)}
+ .team-member{grid-template-columns:38px minmax(0,1fr);gap:13px}
+ .team-member>p{grid-column:2;grid-row:3;margin-top:7px}
+ .team-proof{grid-column:2;grid-row:2;margin-top:14px}
+ .team-proof strong{font-size:50px}
+ .team-proof span{max-width:350px;font-size:15px;margin-top:7px}
+ .team-identity .team-role{margin-top:13px}
+ .aelitwood-art .art-title.display{font-size:clamp(70px,15vw,110px)}
+ .aelitwood-art .art-footer{font-size:13px}
+ .case-hero-visual .aelitwood-art .art-title.display{font-size:clamp(80px,17vw,118px)}
+ .case-hero h1.display{font-size:clamp(49px,8vw,65px)}
+ .case-metric{display:block}
+ .case-metric strong{font-size:clamp(48px,9vw,65px);margin-bottom:10px}
+ .case-metric span{max-width:none}
+ .contact .section-heading.display{font-size:clamp(48px,9.2vw,70px)}
+}
+@media(max-width:420px){
+ .site-header{grid-template-columns:minmax(0,1fr) 66px}
+ .hero-left{min-height:620px;padding-bottom:29px}
+ .hero-kicker{max-width:210px;font-size:15px}
+ .hero-sign{width:53px;height:53px;right:17px;top:30px}
+ .hero-heading{font-size:clamp(42px,12.3vw,51px);margin:37px 0 23px}
+ .hero-description{width:53%;font-size:14px;line-height:1.45;max-width:195px;margin-bottom:24px}
+ .hero-actions{width:53%;gap:10px}
+ .hero-actions .hero-button{font-size:14px;padding:14px 11px;min-height:54px;gap:8px}
+ .hero-actions .hero-button .arrow{width:18px;height:18px}
+ .hero-author{width:40%}
+ .hero-author figcaption{font-size:10px;line-height:1.25}
+ .services-heading,.cases-heading{padding:30px 18px}
+ .service-card{padding:28px 18px}
+ .service-card h3{font-size:31px}
+ .service-card>p{font-size:17px}
+ .service-result p{font-size:16px}
+ .implementation-task{padding:27px 18px}
+ .implementation-task h3{font-size:29px}
+ .implementation-task p,.implementation-task .task-situation{font-size:16px}
+ .implementation-process .practical-intro{padding:30px 18px}
+ .implementation-steps .step{grid-template-columns:34px minmax(0,1fr);padding:25px 18px;gap:14px}
+ .implementation-steps .step-number{font-size:35px}
+ .step h4{font-size:24px}
+ .training-method .practical-intro .section-heading{font-size:clamp(34px,10.5vw,44px)}
+ .program-title{padding:25px 18px;font-size:27px}
+ .program-cta{padding:25px 18px}
+ .program-cta .button{font-size:17px;padding:17px;gap:15px}
+ .training-materials h3{font-size:32px}
+ .training-materials li{font-size:16px}
+ .format h3.display{font-size:clamp(28px,8.9vw,36px)}
+ #implementation-title{font-size:clamp(34px,10.5vw,44px)}
+ .team-member{grid-template-columns:29px minmax(0,1fr);gap:10px}
+ .team-proof strong{font-size:46px}
+ .team-proof span{font-size:14px}
+ .aelitwood-art .art-title.display{font-size:clamp(69px,19vw,82px)}
+ .aelitwood-art .art-footer{font-size:11px}
+ .case-hero h1.display{font-size:clamp(39px,12vw,50px)}
+ .case-metric strong{font-size:clamp(45px,12vw,53px)}
+ .contact .section-heading.display{font-size:clamp(42px,12.4vw,52px)}
+ .contact-main .button{font-size:17px;gap:15px;padding:17px}
+}
+@media(min-width:701px) and (max-width:950px){
+ .case-fact strong{font-size:clamp(34px,4.8vw,42px)}
+}
